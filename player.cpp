@@ -1,16 +1,16 @@
 #include <iostream>
 #include "player.h"
 
-player::player(int No, SDL_renderer *renderer,std::string imgname)
+unsigned int player::m_dernier_No = 0;
+player::player(std::string imgname ,SDL_Renderer *renderer): image(imgname, renderer)
 {
-    SDL_surface* tmp_surface = SDL_LoadBMP(imgname.c_str());
-    if (tmp_surface==null) std::cout <<"Image non chargée " <<SDL_GetError() << std::endl;
+    m_dernier_No ++;
+    m_No=m_dernier_No;
+    std::cout << "Joueur " <<get_player_no() <<" cree\n";
 
-    m_texture=SDL_CreateTexture(renderer, tmp_surface);
-    if (m_surface==null) std::cout <<"Texture non chargée " <<SDL_GetError() << std::endl;
+}
 
-
-
-
-
+unsigned int player::get_player_no()
+{
+    return m_No;
 }

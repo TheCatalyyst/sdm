@@ -1,18 +1,19 @@
+#include "image.h"
+#include <SDL2/SDL.h>
 
-#include <SDL.h>
-
-class player
+class player : public image
 {
 public:
 
-    player(int No, SDL_renderer *renderer, std::string imgname);
-    virtual ~image();
 
-    int height;
-    int width;
+    player( std::string imgname, SDL_Renderer * renderer);
 
+
+    unsigned int get_player_no();
 
 private:
-    SDL_Texture* m_texture;
-    SDL_Rect m_pos;
+
+    unsigned int m_No;
+    static unsigned int m_dernier_No;
+
 };

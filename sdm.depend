@@ -446,5 +446,18 @@
 1476743578 c:\mingw\include\signal.h
 	<_mingw.h>
 
-1490902741 source:c:\users\corentin\documents\projets codeblocks\sdm\player.cpp
+1490993461 source:c:\users\corentin\documents\projets codeblocks\sdm\player.cpp
+	<iostream>
+	"player.h"
+
+1490987063 source:c:\users\corentin\documents\projets codeblocks\sdm\image.cpp
+	"image.h"
+
+1490993684 c:\users\corentin\documents\projets codeblocks\sdm\image.h
+	<iostream>
+	<SDL2/SDL.h>
+
+1490993684 c:\users\corentin\documents\projets codeblocks\sdm\player.h
+	"image.h"
+	<SDL2/SDL.h>
 
