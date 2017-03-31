@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1490646817 source:c:\users\corentin\documents\projets codeblocks\sdm\main.cpp
+1490902741 source:c:\users\corentin\documents\projets codeblocks\sdm\main.cpp
 	<SDL2/SDL.h>
 	<iostream>
 	<stdio.h>
@@ -321,57 +321,57 @@
 	"begin_code.h"
 	"close_code.h"
 
-1476747177 c:\mingw\include\sys\types.h
+1476743578 c:\mingw\include\sys\types.h
 	<_mingw.h>
 	<stddef.h>
 
-1476747177 c:\mingw\include\_mingw.h
+1476743578 c:\mingw\include\_mingw.h
 	<msvcrtver.h>
 	<w32api.h>
 
-1476747177 c:\mingw\include\msvcrtver.h
+1476743578 c:\mingw\include\msvcrtver.h
 	<_mingw.h>
 
-1474407938 c:\mingw\include\w32api.h
+1474404338 c:\mingw\include\w32api.h
 	<sdkddkver.h>
 
-1474407938 c:\mingw\include\sdkddkver.h
+1474404338 c:\mingw\include\sdkddkver.h
 
-1476747177 c:\mingw\include\stdio.h
+1476743578 c:\mingw\include\stdio.h
 	<_mingw.h>
 	<stddef.h>
 	"sys/types.h"
 	"stdarg.h"
 	<locale.h>
 
-1476747177 c:\mingw\include\locale.h
+1476743578 c:\mingw\include\locale.h
 	<_mingw.h>
 	<stddef.h>
 
-1476747177 c:\mingw\include\stdlib.h
+1476743578 c:\mingw\include\stdlib.h
 	<_mingw.h>
 	<stddef.h>
 	<locale.h>
 
-1476747177 c:\mingw\include\malloc.h
+1476743578 c:\mingw\include\malloc.h
 	<_mingw.h>
 	<stdlib.h>
 
-1476747177 c:\mingw\include\memory.h
+1476743578 c:\mingw\include\memory.h
 	<string.h>
 
-1476747177 c:\mingw\include\string.h
+1476743578 c:\mingw\include\string.h
 	<_mingw.h>
 	<stddef.h>
 	<strings.h>
 	<strings.h>
 	<wchar.h>
 
-1476747177 c:\mingw\include\strings.h
+1476743578 c:\mingw\include\strings.h
 	<_mingw.h>
 	<stddef.h>
 
-1476747177 c:\mingw\include\wchar.h
+1476743578 c:\mingw\include\wchar.h
 	<_mingw.h>
 	<wctype.h>
 	<sys/types.h>
@@ -384,54 +384,54 @@
 	"locale.h"
 	"process.h"
 
-1476747177 c:\mingw\include\wctype.h
+1476743578 c:\mingw\include\wctype.h
 	<_mingw.h>
 	<stddef.h>
 
-1476747177 c:\mingw\include\direct.h
+1476743578 c:\mingw\include\direct.h
 	"dos.h"
 
-1476747177 c:\mingw\include\dos.h
+1476743578 c:\mingw\include\dos.h
 	"io.h"
 
-1476747177 c:\mingw\include\io.h
+1476743578 c:\mingw\include\io.h
 	<_mingw.h>
 	<sys/types.h>
 	"stdint.h"
 
-1476747177 c:\mingw\include\stdint.h
+1476743578 c:\mingw\include\stdint.h
 	<_mingw.h>
 	<stddef.h>
 
-1476747177 c:\mingw\include\sys\stat.h
+1476743578 c:\mingw\include\sys\stat.h
 	<sys/types.h>
 
-1476747177 c:\mingw\include\time.h
+1476743578 c:\mingw\include\time.h
 	<sys/types.h>
 	<_mingw.h>
 	<stddef.h>
 
-1476747177 c:\mingw\include\process.h
+1476743578 c:\mingw\include\process.h
 	<_mingw.h>
 	<sys/types.h>
 	"stdint.h"
 
-1476747177 c:\mingw\include\inttypes.h
+1476743578 c:\mingw\include\inttypes.h
 	<_mingw.h>
 	<stdint.h>
 	<stddef.h>
 
-1476747177 c:\mingw\include\ctype.h
+1476743578 c:\mingw\include\ctype.h
 	<_mingw.h>
 	<wctype.h>
 
-1476747177 c:\mingw\include\math.h
+1476743578 c:\mingw\include\math.h
 	<_mingw.h>
 
-1476747177 c:\mingw\include\float.h
+1476743578 c:\mingw\include\float.h
 	<_mingw.h>
 
-1378006747 c:\mingw\include\iconv.h
+1378003148 c:\mingw\include\iconv.h
 	"iconv.h"
 	<stddef.h>
 	<errno.h>
@@ -440,9 +440,11 @@
 	<time.h>
 	<wchar.h>
 
-1476747177 c:\mingw\include\errno.h
+1476743578 c:\mingw\include\errno.h
 	<_mingw.h>
 
-1476747177 c:\mingw\include\signal.h
+1476743578 c:\mingw\include\signal.h
 	<_mingw.h>
+
+1490902741 source:c:\users\corentin\documents\projets codeblocks\sdm\player.cpp
 
