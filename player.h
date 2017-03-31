@@ -1,6 +1,8 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include "image.h"
 #include <SDL2/SDL.h>
-
 class player : public image
 {
 public:
@@ -17,3 +19,5 @@ private:
     static unsigned int m_dernier_No;
 
 };
+
+#endif

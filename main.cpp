@@ -1,7 +1,12 @@
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <stdio.h>
+#include <vector>
 
+#include "player.h"
+#include "image.h"
+
+using namespace std;
 int main(int argc, char** argv)
 {
     /* Initialisation simple */
@@ -20,6 +25,22 @@ int main(int argc, char** argv)
                                                                   480,
                                                                   SDL_WINDOW_SHOWN);
 
+
+
+        SDL_Renderer * renderer;
+
+
+
+
+        unsigned int nplayer=5;
+        vector<player> playervect;
+
+        for (unsigned int i_player=0;i_player<nplayer;i_player ++){
+        //while(playervect.size()<nplayer){
+            playervect.push_back(player("sample.bmp",renderer));
+            cout << "player " << "initialized\n";
+        }
+
         if( pWindow )
         {
             bool esc=false;
@@ -35,7 +56,7 @@ int main(int argc, char** argv)
                     switch (event.type)
                     {
                     case SDL_MOUSEMOTION:
-                        std::cout << "x= " << event.motion.x << std::endl;
+                        cout << "x= " << event.motion.x << endl;
                         break;
                     case SDL_KEYDOWN:
                         switch(event.key.keysym.sym)
@@ -45,23 +66,23 @@ int main(int argc, char** argv)
                             return 0;
                             break;
                         case SDLK_UP:
-                            std::cout << "up down\n";
+                            cout << "up down\n";
                             up=true;
                             break;
                         case SDLK_DOWN:
-                            std::cout << "down down\n";
+                            cout << "down down\n";
                             down=true;
                             break;
                         case SDLK_LEFT:
-                            std::cout << "left down\n";
+                            cout << "left down\n";
                             left=true;
                             break;
                         case SDLK_RIGHT:
-                            std::cout << "right down\n";
+                            cout << "right down\n";
                             right=true;
                             break;
                         default:
-                            std::cout << "Touche inconnue down \n";
+                            cout << "Touche inconnue down \n";
                             break;
                         }
                         break;
@@ -70,33 +91,36 @@ int main(int argc, char** argv)
                         {
                         case SDLK_UP:
                             up=false;
-                            std::cout << "up up\n";
+                            cout << "up up\n";
                             break;
                         case SDLK_DOWN:
-                            std::cout << "down up\n";
+                            cout << "down up\n";
                             down=false;
                             break;
                         case SDLK_LEFT:
-                            std::cout << "left up\n";
+                            cout << "left up\n";
                             left=false;
                             break;
                         case SDLK_RIGHT:
-                            std::cout << "right up\n";
+                            cout << "right up\n";
                             right=false;
                             break;
                         default:
-                            std::cout << "Touche inconnue up \n";
+                            cout << "Touche inconnue up \n";
                             break;
                         }
                     default:
-                        std::cout << "Evenement inconnu\n";
+                        cout << "Evenement inconnu\n";
                         break;
 
                     }
-                    std::cout << "done\n";
+                    cout << "done\n";
                 }
 
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 
 
