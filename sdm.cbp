@@ -46,6 +46,8 @@
 			<Add library="C:/mingw_dev_lib/lib/libSDL2.dll.a" />
 			<Add directory="C:/mingw_dev_lib/lib" />
 		</Linker>
+		<Unit filename="image.cpp" />
+		<Unit filename="image.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="player.cpp" />
 		<Unit filename="player.h" />

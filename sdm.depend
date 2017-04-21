@@ -1,8 +1,11 @@
 # depslib dependency file v1.0
-1490902741 source:c:\users\corentin\documents\projets codeblocks\sdm\main.cpp
+1492710336 source:c:\users\corentin\documents\projets codeblocks\sdm\main.cpp
 	<SDL2/SDL.h>
 	<iostream>
 	<stdio.h>
+	<vector>
+	"player.h"
+	"image.h"
 
 1394940796 c:\mingw_dev_lib\include\sdl2\sdl.h
 	"SDL_main.h"
@@ -450,7 +453,7 @@
 	<iostream>
 	"player.h"
 
-1490987063 source:c:\users\corentin\documents\projets codeblocks\sdm\image.cpp
+1492706781 source:c:\users\corentin\documents\projets codeblocks\sdm\image.cpp
 	"image.h"
 
 1490993684 c:\users\corentin\documents\projets codeblocks\sdm\image.h

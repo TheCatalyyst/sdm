@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <vector>
 
+
 #include "player.h"
 #include "image.h"
 
@@ -21,25 +22,31 @@ int main(int argc, char** argv)
         SDL_Window* pWindow = NULL;
         pWindow = SDL_CreateWindow("Window",SDL_WINDOWPOS_UNDEFINED,
                                                                   SDL_WINDOWPOS_UNDEFINED,
-                                                                  640,
-                                                                  480,
+                                                                  800,
+                                                                  600,
                                                                   SDL_WINDOW_SHOWN);
 
 
 
         SDL_Renderer * renderer;
+        renderer=SDL_CreateRenderer(pWindow,0,0);
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+
+        /* Clear the entire screen to our selected color. */
+
+        SDL_RenderClear(renderer);
 
 
-
-
+// Player generation /////////////////////////////////
         unsigned int nplayer=5;
-        vector<player> playervect;
-
+        vector<player*> playervect;
         for (unsigned int i_player=0;i_player<nplayer;i_player ++){
-        //while(playervect.size()<nplayer){
-            playervect.push_back(player("sample.bmp",renderer));
-            cout << "player " << "initialized\n";
+            player* curr_player = new player("soleil.bmp",renderer);
+            playervect.push_back(curr_player);
+            cout << "player " << playervect[i_player]->get_player_no() << "initialized\n";
         }
+//////////////////////////////////////////////////////
+
 
         if( pWindow )
         {
@@ -49,6 +56,9 @@ int main(int argc, char** argv)
             bool left=false;
             bool right=false;
             SDL_Event event;
+
+
+            /////////////////////////////BOUCLE WHILE POUR ROMAIN
             while(1){
 
                 while(SDL_PollEvent(&event))
@@ -63,6 +73,7 @@ int main(int argc, char** argv)
                         {
                         case SDLK_ESCAPE:
                             esc=true;
+                            SDL_Quit();
                             return 0;
                             break;
                         case SDLK_UP:
@@ -118,6 +129,13 @@ int main(int argc, char** argv)
                 }
 
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                SDL_RenderClear(renderer);
+
+                if (up){
+                  playervect[0]->afficher(renderer,0,0);
+                  cout << "Player " << playervect[0]->get_player_no() << " displayed\n";
+                }
+                SDL_RenderPresent(renderer);
 
 
 
@@ -126,23 +144,7 @@ int main(int argc, char** argv)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                SDL_Delay(10);
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 }
 

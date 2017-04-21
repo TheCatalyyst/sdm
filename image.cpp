@@ -37,4 +37,7 @@ void image::afficher(SDL_Renderer *renderer, int x, int y)
         SDL_Rect r= {.x=x,.y=y,.w=m_positionImage.w,.h=m_positionImage.h};
         SDL_RenderCopy(renderer, m_texture, &m_positionImage, &r);
     }
+    else {
+        std::cout << "Error displaying image : No texture loaded\n";
+    }
 }
